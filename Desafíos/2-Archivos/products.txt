@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Logitech G600",
+    "price": 9500,
+    "thumbnail": "https://www.mercadolibre.com.ar/mouse-de-juego-logitech-g-series-g600-negro/p/MLA6213576?pdp_filters=category:MLA1714#searchVariation=MLA6213576&position=1&search_layout=stack&type=product&tracking_id=60952b81-4c90-4ece-8541-30e1dc4acd5b",
+    "id": 1
+  },
+  {
+    "title": "Razer Naga",
+    "price": 19000,
+    "thumbnail": "https://www.mercadolibre.com.ar/mouse-de-juego-razer-naga-x-negro/p/MLA17974714?pdp_filters=category:MLA1714#searchVariation=MLA17974714&position=1&search_layout=stack&type=product&tracking_id=c2159408-d8d6-4c10-9f2f-4e490b547a75",
+    "id": 2
+  },
+  {
+    "title": "Mouse Pad Cougar",
+    "price": 3500,
+    "thumbnail": "https://www.mercadolibre.com.ar/mouse-pad-gamer-cougar-arena-de-tela-y-goma-xl-300mm-x-800mm-x-5mm-black/p/MLA15459727?pdp_filters=category:MLA1716#searchVariation=MLA15459727&position=1&search_layout=stack&type=product&tracking_id=89a9e68f-0579-4fa7-a62c-573d158b42b8",
+    "id": 3
+  },
+  {
+    "title": "Xbox Wireless Controller",
+    "price": 34500,
+    "thumbnail": "https://www.mercadolibre.com.ar/joystick-inalambrico-microsoft-xbox-xbox-series-xs-controller-usb-c-cable-carbon-black/p/MLA17483958?pdp_filters=category:MLA373767#searchVariation=MLA17483958&position=1&search_layout=stack&type=product&tracking_id=568a498a-2d8e-4f6e-b671-e2e4816ab094",
+    "id": 4
+  }
+]
