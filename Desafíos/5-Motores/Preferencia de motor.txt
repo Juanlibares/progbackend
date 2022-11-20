@@ -1,0 +1,1 @@
+De ahora en más voy a elegir Ejs, me parece más practico y afinado a js, además de que es mas cómodo trabajarlo 
