@@ -1,0 +1,3 @@
+Sin dudas prefiero Ejs, primero porque a diferencia de pug y handlebars, para la logica utiliza exactamente la sintaxis de JS.
+Como segundo punto, y compartiendo esta ventaja con handlebars, la sintaxis para crear el html es la misma que el html en si, por ende no hay que convertir nada.
+Aclaracion: No se si sera mi percepcion, pero PUGs me parecio bastante mas lento al renderizarse.
