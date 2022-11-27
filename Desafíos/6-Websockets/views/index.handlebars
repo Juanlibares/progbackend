@@ -1,0 +1,73 @@
+<div class="d-flex flex-column" style="width: 40%; padding-right: 3rem">
+    <div>
+        <div class="container mt-3 d-flex justify-content-center flex-column align-items-center">
+            <h2 style="color: rgb(42, 151, 165);"><strong>Productos</strong></h2>
+            <div style="width:100%; padding: 0rem 2rem; border-radius: 12px; background-color:rgb(52, 122, 128)">
+                <br>
+                <center><span style="color:rgb(207, 207, 207);"><strong>Ingrese un nuevo producto</strong></span>
+                </center>
+                <br>
+                <form style="display: flex; justify-content: center; align-items: center; flex-direction: column; "
+                    id="productForm" autocomplete="off">
+                    <div class="form-group">
+                        <center><label for="title" style="color: #fff"><b>Nombre</b></label></center>
+                        <input class="form-control" type="text" name="title" required>
+                    </div>
+
+                    <div class="form-group">
+                        <center><label for="price" style="color: #fff"><b>Precio</b></label></center>
+                        <input class="form-control" type="number" name="price" required>
+                    </div>
+
+                    <div class="form-group">
+                        <center><label for="thumbnail" style="color: #fff"><b>URL imagen</b></label></center>
+                        <input class="form-control" type="text" name="thumbnail" required>
+                    </div>
+                    <input style="color:#fff" class="btn btn-info my-2" type="submit" value="Guardar">
+                </form>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="table-responsive container">
+        <table class="table table-info" style="border-radius: 12px;">
+            <thead>
+                <tr>
+                    <th scope="col" style="color:rgb(52, 122, 128)">Producto</th>
+                    <th scope="col" style="color:rgb(52, 122, 128)">Precio</th>
+                    <th scope="col" style="color:rgb(52, 122, 128)">Imagen</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div style="width: 40%; padding-left: 3rem; border-left: 1px solid gray; ">
+    <div class="mt-3">
+        <h2 style="color: rgb(42, 151, 165); margin: auto; width: 50%; text-align: center"><strong>Centro de mensajes</strong></h2>
+        <br>
+        <form autocomplete="off" style="padding-right: 3rem;" id="messageForm">
+            <div class="form-group row">
+                <label for="mail" class="col-sm-2 col-form-label" style="color:rgb(52, 122, 128); width:50%"><b>Tu nombre:</b></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" style="width:50%" name="mail">
+                </div>
+            </div>
+            <br>
+            <div id="mensajes"></div>
+            <br>
+            <div class="form-group row" style="padding-right: 0.6rem;">
+                <label for="message" class="col-sm-2 col-form-label" style="color:rgb(52, 122, 128)"><b>Mensaje</b></label>
+                <div class="col-sm-8">
+                    <textarea class="form-control" name="message" rows="2" style="resize: none"></textarea>
+                </div>
+                <button type="submit" class="btn col-sm-2 btn-info" style="height: fit-content;" id="sendMessage">
+                    <span class="material-icons">send</span>
+                </button>
+            </div>
+        </form>
+        <hr>
+    </div>
+</div>

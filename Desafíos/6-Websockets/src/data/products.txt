@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Sierra Circular",
+		"price": 123.45,
+		"thumbnail": "https://cdn3.iconfinder.com/data/icons/industrial-and-construction-1-3/68/63-256.png",
+		"id": 0
+	},
+	{
+		"title": "Amoladora",
+		"price": 4586,
+		"thumbnail": "https://cdn4.iconfinder.com/data/icons/construction-machines-and-tools/64/manual-grinder-hand-tool-electric-machine-construction-256.png",
+		"id": 1
+	},
+	{
+		"title": "Nivel Manual",
+		"price": 1235,
+		"thumbnail": "https://cdn4.iconfinder.com/data/icons/construction-machines-and-tools/64/bubble-spirit-level-tool-construction-balance-meter-256.png",
+		"id": 2
+	},
+	{
+		"title": "Martillo",
+		"price": 6123,
+		"thumbnail": "https://cdn1.iconfinder.com/data/icons/finance-251/64/17-256.png",
+		"id": 4
+	},
+	{
+		"title": "Sierra Caladora",
+		"price": 1323,
+		"thumbnail": "https://cdn0.iconfinder.com/data/icons/elasto-power-tools-color-1/26/04-ELASTOFONT-POWER-TOOLS-COLORS_electric-jig-saw-256.png",
+		"id": 5
+	},
+	{
+		"title": "Lapiz",
+		"price": 100,
+		"thumbnail": "https://cdn1.iconfinder.com/data/icons/carpenter-and-woodworking/128/PENCIL-256.png",
+		"id": 6
+	}
+]
