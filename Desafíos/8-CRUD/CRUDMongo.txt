@@ -1,0 +1,73 @@
+//1. Utilizando Mongo Shell, crear una base de datos llamada ecommerce que contenga dos colecciones: mensajes productos.
+use ecommerce
+db.createCollection("mensajes");
+db.createCollection("productos");
+
+
+//2. Agregar 10 documentos con valores distintos a las colecciones ‘mensajes’ y ‘productos’. 
+db.mensajes.insertMany([{author:"author1", date:"16/10/2021 13:43:23", text:"Hola1"},
+		{author:"author2", date:"16/10/2021 13:43:23", text:"Hola2"},
+		{author:"author3", date:"16/10/2021 13:43:23", text:"Hola3"},
+		{author:"author4", date:"16/10/2021 13:43:23", text:"Hola4"},
+		{author:"author5", date:"16/10/2021 13:43:23", text:"Hola5"},
+		{author:"author6", date:"16/10/2021 13:43:23", text:"Hola6"},
+		{author:"author7", date:"16/10/2021 13:43:23", text:"Hola7"},
+		{author:"author8", date:"16/10/2021 13:43:23", text:"Hola8"},
+		{author:"author9", date:"16/10/2021 13:43:23", text:"Hola9"},
+		{author:"author10", date:"16/10/2021 13:43:23", text:"Hola10"}]);
+
+db.productos.insertMany([{title:"title1", price:120, thumbnail:"http://ruta.com"},
+		{title:"title2", price:580, thumbnail:"http://ruta.com"},
+		{title:"title3", price:900, thumbnail:"http://ruta.com"},
+		{title:"title4", price:1280, thumbnail:"http://ruta.com"},
+		{title:"title5", price:1700, thumbnail:"http://ruta.com"},
+		{title:"title6", price:2300, thumbnail:"http://ruta.com"},
+		{title:"title7", price:2860, thumbnail:"http://ruta.com"},
+		{title:"title8", price:3350, thumbnail:"http://ruta.com"},
+		{title:"title9", price:4320, thumbnail:"http://ruta.com"},
+		{title:"title10", price:4990, thumbnail:"http://ruta.com"}]);
+
+//3. Listar todos los documentos en cada colección.
+db.mensajes.find();
+db.productos.find();
+
+//4. Mostrar la cantidad de documentos almacenados en cada una de ellas.
+db.mensajes.estimatedDocumentCount();
+db.productos.estimatedDocumentCount();
+
+//5. Realizar un CRUD sobre la colección de productos.
+
+//a.Agregar un producto más en la colección de productos
+db.productos.insertOne({title:"title11", price:125, thumbnail:"http://ruta.com"});
+
+//Listar los productos con precio menor a 1000 pesos
+db.productos.find({price:{$lte:1000}});
+
+//Listar los productos con precio entre los 1000 a 3000 pesos.
+db.productos.find({$and:[{price:{$gte:1000}},{price:{$lte:3000}}]});
+
+//Listar los productos con precio mayor a 3000 pesos.
+db.productos.find({price:{$gte:3000}});
+
+//Realizar una consulta que traiga sólo el nombre del tercer producto más barato.
+db.productos.find({}).sort({'price': 1}).skip(2).limit(1);
+
+//c. Hacer una actualización sobre todos los productos, agregando el campo stock a todos ellos con un valor de 100.
+db.productos.updateMany({}, {$set: {stock: 100}});
+
+//d. Cambiar el stock a cero de los productos con precios mayores a 4000 pesos.
+db.productos.updateMany({price:{$gte:4000}}, {$set: {stock: 0}});
+
+//e. Borrar los productos con precio menor a 1000 pesos.
+db.productos.deleteMany({price:{$lte:1000}})
+
+//6. Crear un usuario.
+db.createUser(
+  {
+    user: "pepe",
+    pwd: "asd456",
+    roles: [
+       { role: "read", db: "ecommerce" }
+    ]
+  }
+)
