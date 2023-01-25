@@ -1,0 +1,41 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h2 class="text-center text-dark mt-5">SignUp Form</h2>
+            <div class="card my-5">
+                <form class="card-body cardbody-color p-lg-5" action="/signup" method="post">
+
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="username" name="username" placeholder="User Name" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="password" class="form-control" id="password" name="name" placeholder="Password" required>
+                    </div>
+                    <div class="text-center"><button type="submit" class="btn btn-color px-5 mb-5 w-100">SignUp</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+    .btn-color {
+        background-color: #0e1c36;
+        color: #fff;
+    }
+    .btn:hover {
+        background-color: #767a81 !important;
+        color: #fff !important;
+    }
+    .profile-image-pic {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+    }
+    .cardbody-color {
+        background-color: #ebf2fa;
+    }
+    a {
+        text-decoration: none;
+    }
+</style>
