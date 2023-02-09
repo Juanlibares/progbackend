@@ -1,0 +1,15 @@
+[
+	{
+		"author": {
+			"mail": "juan@mail.com",
+			"name": "JUAN",
+			"surname": "SANTAFE",
+			"age": "",
+			"alias": "",
+			"avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg "
+		},
+		"date": "25/1/2023 20:28:51",
+		"text": "Hola",
+		"id": 1
+	}
+]
