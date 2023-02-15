@@ -1,0 +1,391 @@
+﻿Statistical profiling result from slow-v8.log, (44889 ticks, 18 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+  39630   88.3%          C:\Windows\SYSTEM32\ntdll.dll
+   4894   10.9%          C:\Program Files\nodejs\node.exe
+      5    0.0%          C:\Windows\System32\KERNELBASE.dll
+      4    0.0%          C:\Windows\System32\KERNEL32.DLL
+      1    0.0%          C:\Windows\system32\mswsock.dll
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     27    0.1%    7.6%  LazyCompile: *parse C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+     24    0.1%    6.8%  LazyCompile: *wrap C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+     22    0.0%    6.2%  LazyCompile: *resolve node:path:158:10
+     17    0.0%    4.8%  LazyCompile: *next C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+     16    0.0%    4.5%  LazyCompile: *SourceNode_walk C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:221:53
+     12    0.0%    3.4%  RegExp: ^(?:[^\x00]*?(?=(\{\{)))
+      7    0.0%    2.0%  RegExp: (?:\r\n?|\n).*
+      7    0.0%    2.0%  LazyCompile: *anonymous C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:12:42
+      6    0.0%    1.7%  LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      6    0.0%    1.7%  LazyCompile: *SourceNode_add C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:172:51
+      5    0.0%    1.4%  RegExp: ^(?:\}\}\}\})
+      5    0.0%    1.4%  LazyCompile: *resolvePath C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      5    0.0%    1.4%  LazyCompile: *WhitespaceControl.Program C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\whitespace-control.js:19:48
+      4    0.0%    1.1%  LazyCompile: *step C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+      4    0.0%    1.1%  LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:174:29
+      3    0.0%    0.8%  RegExp: ^(?:\.(?=([=~}\s\/.)|])))
+      3    0.0%    0.8%  RegExp: \r?\n\s*?$
+      3    0.0%    0.8%  LazyCompile: *next C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\index.js:177:16
+      3    0.0%    0.8%  LazyCompile: *SourceNode C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:35:20
+      2    0.0%    0.6%  RegExp: ^(?:undefined(?=([~}\s)])))
+      2    0.0%    0.6%  RegExp: ^(?:as\s+\|)
+      2    0.0%    0.6%  RegExp: ^(?:\{\{\{\{)
+      2    0.0%    0.6%  RegExp: ^(?:\{\{(~)?\/)
+      2    0.0%    0.6%  RegExp: ^(?:\{\{(~)?>)
+      2    0.0%    0.6%  RegExp: ^(?:\{\{(~)?#\*?)
+      2    0.0%    0.6%  RegExp: ^(?:-?[0-9]+(?:\.[0-9]+)?(?=([~}\s)])))
+      2    0.0%    0.6%  LazyCompile: *yy.locInfo C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:42:25
+      2    0.0%    0.6%  LazyCompile: *toNamespacedPath node:path:618:19
+      2    0.0%    0.6%  LazyCompile: *strEscape node:internal/util/inspect:496:19
+      2    0.0%    0.6%  LazyCompile: *quotedString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      2    0.0%    0.6%  LazyCompile: *push C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:868:22
+      2    0.0%    0.6%  LazyCompile: *normalizeString node:path:66:25
+      2    0.0%    0.6%  LazyCompile: *getEncodingOps node:buffer:684:24
+      2    0.0%    0.6%  LazyCompile: *dirname node:path:653:10
+      2    0.0%    0.6%  LazyCompile: *C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      2    0.0%    0.6%  Function: ^writeHead C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\on-headers\index.js:28:29
+      2    0.0%    0.6%  Function: ^tryRender C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\application.js:655:19
+      2    0.0%    0.6%  Function: ^set maxAge C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-session\session\cookie.js:83:13
+      2    0.0%    0.6%  Function: ^ret C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\runtime.js:188:15
+      2    0.0%    0.6%  Function: ^readFileAfterOpen node:fs:320:27
+      2    0.0%    0.6%  Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+      1    0.0%    0.3%  RegExp: ^text\/|^application\/(javascript|json)
+      1    0.0%    0.3%  RegExp: ^\/logout\/?$
+      1    0.0%    0.3%  RegExp: ^[a-zA-Z_][a-zA-Z_0-9]*$
+      1    0.0%    0.3%  RegExp: ^(?:null(?=([~}\s)])))
+      1    0.0%    0.3%  RegExp: ^(?:false(?=([~}\s)])))
+      1    0.0%    0.3%  RegExp: ^(?:\}(~)?\}\})
+      1    0.0%    0.3%  RegExp: ^(?:\|)
+      1    0.0%    0.3%  RegExp: ^(?:\{\{(~)?\*?)
+      1    0.0%    0.3%  RegExp: ^(?:\{\{(~)?#>)
+      1    0.0%    0.3%  RegExp: ^(?:\.\.)
+      1    0.0%    0.3%  RegExp: ^(?:\))
+      1    0.0%    0.3%  RegExp: ^(?:\()
+      1    0.0%    0.3%  RegExp: ^(?:=)
+      1    0.0%    0.3%  RegExp: ^(?:([^\s!"#%-,\.\/;->@\[-\^`\{-~]+(?=([=~}\s\/.)|]))))
+      1    0.0%    0.3%  RegExp: ^(?:'(\\[']|[^'])*')
+      1    0.0%    0.3%  RegExp: \u001b\[\d\d?m
+      1    0.0%    0.3%  RegExp: \/+
+      1    0.0%    0.3%  RegExp: [ \t]+$
+      1    0.0%    0.3%  LazyCompile: *toString node:buffer:789:46
+      1    0.0%    0.3%  LazyCompile: *template C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\runtime.js:52:18
+      1    0.0%    0.3%  LazyCompile: *syncExports node:internal/bootstrap/loaders:304:14
+      1    0.0%    0.3%  LazyCompile: *replaceStack C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:892:38
+      1    0.0%    0.3%  LazyCompile: *relative node:path:496:11
+      1    0.0%    0.3%  LazyCompile: *realpathSync node:fs:2474:22
+      1    0.0%    0.3%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:67:35
+      1    0.0%    0.3%  LazyCompile: *preparePath C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:63:21
+      1    0.0%    0.3%  LazyCompile: *nextTick node:internal/process/task_queues:103:18
+      1    0.0%    0.3%  LazyCompile: *join node:internal/util:388:14
+      1    0.0%    0.3%  LazyCompile: *isWindowsDeviceRoot node:path:60:29
+      1    0.0%    0.3%  LazyCompile: *formatProperty node:internal/util/inspect:1911:24
+      1    0.0%    0.3%  LazyCompile: *extend C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\utils.js:28:16
+      1    0.0%    0.3%  LazyCompile: *emit node:events:460:44
+      1    0.0%    0.3%  LazyCompile: *contextName C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:990:36
+      1    0.0%    0.3%  LazyCompile: *_storeHeader node:_http_outgoing:420:22
+      1    0.0%    0.3%  LazyCompile: *SubExpression C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:236:40
+      1    0.0%    0.3%  LazyCompile: *Program C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:113:28
+      1    0.0%    0.3%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:630:37
+      1    0.0%    0.3%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1    0.0%    0.3%  LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:130:39
+      1    0.0%    0.3%  LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      1    0.0%    0.3%  LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:251:47
+      1    0.0%    0.3%  LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1    0.0%    0.3%  Function: ^writevGeneric node:internal/stream_base_commons:122:23
+      1    0.0%    0.3%  Function: ^writeHead node:_http_server:338:19
+      1    0.0%    0.3%  Function: ^wrap C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:101:22
+      1    0.0%    0.3%  Function: ^validateEncoding node:internal/validators:348:26
+      1    0.0%    0.3%  Function: ^updateOutgoingData node:_http_server:704:28
+      1    0.0%    0.3%  Function: ^tryStatSync node:internal/modules/esm/resolve:176:3
+      1    0.0%    0.3%  Function: ^transformLiteralToPath C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:551:32
+      1    0.0%    0.3%  Function: ^strEscape node:internal/util/inspect:496:19
+      1    0.0%    0.3%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.0%    0.3%  Function: ^setOwnProperty node:internal/util:537:24
+      1    0.0%    0.3%  Function: ^setHeader node:_http_outgoing:642:57
+      1    0.0%    0.3%  Function: ^session C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-session\index.js:179:26
+      1    0.0%    0.3%  Function: ^serveStatic C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\serve-static\index.js:72:31
+      1    0.0%    0.3%  Function: ^sendFile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\send\index.js:712:51
+      1    0.0%    0.3%  Function: ^send C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:111:25
+      1    0.0%    0.3%  Function: ^resolvePath C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:492:36
+      1    0.0%    0.3%  Function: ^resolve node:path:158:10
+      1    0.0%    0.3%  Function: ^reduceToSingleString node:internal/util/inspect:2007:30
+      1    0.0%    0.3%  Function: ^readFile node:fs:388:18
+      1    0.0%    0.3%  Function: ^pushParam C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:404:32
+      1    0.0%    0.3%  Function: ^pushAsyncContext node:internal/async_hooks:539:26
+      1    0.0%    0.3%  Function: ^push C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:868:22
+      1    0.0%    0.3%  Function: ^process_params C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\index.js:338:47
+      1    0.0%    0.3%  Function: ^processTimers node:internal/timers:492:25
+      1    0.0%    0.3%  Function: ^preparePath C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\helpers.js:63:21
+      1    0.0%    0.3%  Function: ^pipe C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\send\index.js:506:43
+      1    0.0%    0.3%  Function: ^parserOnIncoming node:_http_server:968:26
+      1    0.0%    0.3%  Function: ^originalurl C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\parseurl\index.js:65:22
+      1    0.0%    0.3%  Function: ^onHeaders C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\on-headers\index.js:56:20
+      1    0.0%    0.3%  Function: ^onEofChunk node:internal/streams/readable:545:20
+      1    0.0%    0.3%  Function: ^needFinish node:internal/streams/writable:653:20
+      1    0.0%    0.3%  Function: ^module.exports C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\qs\lib\parse.js:239:27
+      1    0.0%    0.3%  Function: ^join node:internal/util:388:14
+      1    0.0%    0.3%  Function: ^isModified C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-session\index.js:425:24
+      1    0.0%    0.3%  Function: ^internalNameLookup C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:66:50
+      1    0.0%    0.3%  Function: ^insert node:internal/timers:355:16
+      1    0.0%    0.3%  Function: ^initialize C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\passport\lib\middleware\initialize.js:51:29
+      1    0.0%    0.3%  Function: ^hb.compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars.js:38:25
+      1    0.0%    0.3%  Function: ^hash C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-session\index.js:596:14
+      1    0.0%    0.3%  Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+      1    0.0%    0.3%  Function: ^getHeader node:_http_outgoing:688:57
+      1    0.0%    0.3%  Function: ^getColorDepth node:internal/tty:106:23
+      1    0.0%    0.3%  Function: ^functionCall C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:113:38
+      1    0.0%    0.3%  Function: ^fromStringFast node:buffer:418:24
+      1    0.0%    0.3%  Function: ^deserializeObject C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\bson\lib\parser\deserializer.js:65:27
+      1    0.0%    0.3%  Function: ^createNewLookupObject C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\internal\create-new-lookup-object.js:15:31
+      1    0.0%    0.3%  Function: ^contextName C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:990:36
+      1    0.0%    0.3%  Function: ^checkInvalidHeaderChar node:_http_common:221:32
+      1    0.0%    0.3%  Function: ^append C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1    0.0%    0.3%  Function: ^alignPool node:buffer:163:19
+      1    0.0%    0.3%  Function: ^afterWriteDispatched node:internal/stream_base_commons:155:30
+      1    0.0%    0.3%  Function: ^_write node:internal/streams/writable:286:16
+      1    0.0%    0.3%  Function: ^_implicitHeader node:_http_server:333:68
+      1    0.0%    0.3%  Function: ^_addListener node:events:541:22
+      1    0.0%    0.3%  Function: ^Writable node:internal/streams/writable:220:18
+      1    0.0%    0.3%  Function: ^Socket._writev node:net:923:36
+      1    0.0%    0.3%  Function: ^Readable.read node:internal/streams/readable:402:35
+      1    0.0%    0.3%  Function: ^PathExpression C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:289:42
+      1    0.0%    0.3%  Function: ^Module._nodeModulePaths node:internal/modules/cjs/loader:630:37
+      1    0.0%    0.3%  Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1    0.0%    0.3%  Function: ^Glob._readdir C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\glob\glob.js:525:36
+      1    0.0%    0.3%  Function: ^FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.3%  Function: ^ExpressHandlebars._getTemplateName C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:393:61
+      1    0.0%    0.3%  Function: ^ContentStatement C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:228:46
+      1    0.0%    0.3%  Function: ^<anonymous> node:internal/fs/utils:674:38
+      1    0.0%    0.3%  Function: ^<anonymous> node:internal/fs/utils:361:35
+      1    0.0%    0.3%  Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\graceful-fs\graceful-fs.js:118:50
+      1    0.0%    0.3%  Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-session\index.js:598:43
+      1    0.0%    0.3%  Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      1    0.0%    0.3%  Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      1    0.0%    0.3%  Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:201:47
+      1    0.0%    0.3%  Function: *wasm-function[19]
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+    337    0.8%   94.9%  JavaScript
+      0    0.0%    0.0%  C++
+    267    0.6%   75.2%  GC
+  44534   99.2%          Shared libraries
+     18    0.0%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+  39630   88.3%  C:\Windows\SYSTEM32\ntdll.dll
+
+   4894   10.9%  C:\Program Files\nodejs\node.exe
+   3651   74.6%    C:\Program Files\nodejs\node.exe
+    773   21.2%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    773  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+    685   88.6%          Function: ^Socket._writeGeneric node:net:891:42
+    685  100.0%            Function: ^Socket._write node:net:928:35
+     83   10.7%          LazyCompile: *_write node:internal/streams/writable:286:16
+     83  100.0%            Function: ^Writable.write node:internal/streams/writable:336:36
+    577   15.8%      Function: ^compileFunction node:vm:316:25
+    567   98.3%        Function: ^wrapSafe node:internal/modules/cjs/loader:1073:18
+    550   97.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1113:37
+    537   97.6%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     13    2.4%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     17    3.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+     17  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+     10    1.7%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1073:18
+     10  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1113:37
+     10  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1168:37
+    235    6.4%      Function: ^moduleStrategy node:internal/modules/esm/translators:114:56
+    235  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:452:28
+    235  100.0%          C:\Program Files\nodejs\node.exe
+    153    4.2%      Function: ^stat node:internal/modules/cjs/loader:158:14
+     92   60.1%        Function: ^tryFile node:internal/modules/cjs/loader:431:17
+     56   60.9%          Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+     55   98.2%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1    1.8%            Function: ^tryPackage node:internal/modules/cjs/loader:385:20
+     31   33.7%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+     31  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      4    4.3%          Function: ^tryPackage node:internal/modules/cjs/loader:385:20
+      3   75.0%            LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1   25.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      1    1.1%          LazyCompile: ~tryPackage node:internal/modules/cjs/loader:385:20
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+     60   39.2%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+     57   95.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+     57  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      3    5.0%          LazyCompile: ~Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      2   66.7%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      1   33.3%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+    111    3.0%      C:\Program Files\nodejs\node.exe
+      6    5.4%        LazyCompile: *quotedString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      6  100.0%          Function: ^pushSource C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      5   83.3%            Function: ^append C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1   16.7%            Function: ^appendEscaped C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      6    5.4%        LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      4   66.7%          Function: ^compileChildren C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      4  100.0%            LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2   33.3%          LazyCompile: *compileChildren C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      2  100.0%            LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      5    4.5%        Function: ^readPackage node:internal/modules/cjs/loader:326:21
+      4   80.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:368:26
+      3   75.0%            Function: ^trySelf node:internal/modules/cjs/loader:488:17
+      1   25.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1168:37
+      1   20.0%          LazyCompile: *Module._findPath node:internal/modules/cjs/loader:541:28
+      1  100.0%            Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      5    4.5%        Function: ^cpus node:os:141:14
+      5  100.0%          Function: ^getSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/utils/getSysteminfo.js:3:30
+      5  100.0%            Function: ^renderSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/controllers/app.controller.js:7:26
+      5    4.5%        Function: ^FastBuffer node:internal/buffer:958:14
+      5  100.0%          Function: ^createUnsafeBuffer node:internal/buffer:1059:28
+      3   60.0%            Function: ^allocate node:buffer:403:18
+      2   40.0%            Function: ^allocUnsafeSlow node:buffer:388:50
+      4    3.6%        Function: ^removeColors node:internal/util:79:22
+      4  100.0%          Function: ^isBelowBreakLength node:internal/util/inspect:1983:28
+      4  100.0%            Function: ^reduceToSingleString node:internal/util/inspect:2007:30
+      3    2.7%        LazyCompile: *parse C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:269:30
+      3  100.0%          Function: ^parseWithoutProcessing C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:33:32
+      2   66.7%            Function: ^parse C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\base.js:51:15
+      1   33.3%            LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      3    2.7%        LazyCompile: *cpus node:os:141:14
+      3  100.0%          Function: ^getSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/utils/getSysteminfo.js:3:30
+      3  100.0%            Function: ^renderSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/controllers/app.controller.js:7:26
+      3    2.7%        LazyCompile: *appendEscaped C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:416:40
+      3  100.0%          LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      3  100.0%            LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      3    2.7%        Function: ^expressInit C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\middleware\init.js:29:30
+      2   66.7%          LazyCompile: *trim_prefix C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\index.js:293:23
+      2  100.0%            LazyCompile: *next C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\index.js:177:16
+      1   33.3%          Function: ^handle C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%            Function: ^trim_prefix C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\index.js:293:23
+      3    2.7%        Function: ^Module._findPath node:internal/modules/cjs/loader:541:28
+      3  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:904:35
+      3  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      2    1.8%        LazyCompile: ~next C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:478:32
+      2  100.0%          LazyCompile: ~lex C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:525:30
+      2  100.0%            LazyCompile: ~lex C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\parser.js:295:25
+      2    1.8%        Function: ^stat node:internal/modules/cjs/loader:158:14
+      2  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:431:17
+      2  100.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:447:23
+      2    1.8%        Function: ^quotedString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\code-gen.js:118:38
+      2  100.0%          Function: ^pushSource C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:881:34
+      1   50.0%            LazyCompile: ~append C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:394:26
+      1   50.0%            Function: ^compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      2    1.8%        Function: ^parse C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\minimatch\minimatch.js:413:9
+      2  100.0%          C:\Program Files\nodejs\node.exe
+      2  100.0%            Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\minimatch\minimatch.js:222:19
+      2    1.8%        Function: ^header C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:777:29
+      1   50.0%          Function: ^send C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:111:25
+      1  100.0%            Function: ^done C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:1033:27
+      1   50.0%          Function: ^contentType C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:619:32
+      1  100.0%            LazyCompile: ~send C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\response.js:111:25
+      2    1.8%        Function: ^checkInvalidHeaderChar node:_http_common:221:32
+      2  100.0%          Function: ^<anonymous> node:_http_outgoing:618:45
+      2  100.0%            Function: ^setHeader node:_http_outgoing:642:57
+     88    2.4%      Function: ^statSync node:fs:1588:18
+     78   88.6%        Function: ^tryStat C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\view.js:174:17
+     78  100.0%          Function: ^resolve C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\view.js:146:42
+     78  100.0%            Function: ^lookup C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\view.js:104:40
+      7    8.0%        Function: ^tryStatSync node:internal/modules/esm/resolve:176:3
+      5   71.4%          Function: ^finalizeResolution node:internal/modules/esm/resolve:290:28
+      5  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:894:23
+      1   14.3%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:804:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:894:23
+      1   14.3%          Function: ^packageResolve node:internal/modules/esm/resolve:804:24
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:894:23
+      2    2.3%        Function: ^fileExists node:internal/modules/esm/resolve:182:20
+      2  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:198:27
+      2  100.0%            Function: ^packageResolve node:internal/modules/esm/resolve:804:24
+      1    1.1%        LazyCompile: ~tryStatSync node:internal/modules/esm/resolve:176:3
+      1  100.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:804:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:894:23
+     61    1.7%      LazyCompile: *SourceNode_walk C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:221:53
+     53   86.9%        LazyCompile: *SourceNode_walk C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:221:53
+     47   88.7%          LazyCompile: *SourceNode_walk C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:221:53
+     42   89.4%            LazyCompile: *SourceNode_walk C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:221:53
+      5   10.6%            Function: ^SourceNode_toString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:318:61
+      6   11.3%          Function: ^SourceNode_toString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:318:61
+      6  100.0%            C:\Program Files\nodejs\node.exe
+      8   13.1%        Function: ^SourceNode_toString C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\source-map\lib\source-node.js:318:61
+      8  100.0%          C:\Program Files\nodejs\node.exe
+      5   62.5%            LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      3   37.5%            Function: ^createFunctionContext C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:216:56
+     56    1.5%      Function: ^cpus node:os:141:14
+     54   96.4%        Function: ^getSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/utils/getSysteminfo.js:3:30
+     54  100.0%          Function: ^renderSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/controllers/app.controller.js:7:26
+     54  100.0%            Function: ^handle C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\layer.js:86:49
+      2    3.6%        LazyCompile: ~getSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/utils/getSysteminfo.js:3:30
+      2  100.0%          LazyCompile: ~renderSystemInfo file:///C:/Users/juand/Desktop/32190-BK/DesafioLoggers/src/controllers/app.controller.js:7:26
+      2  100.0%            Function: ^handle C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express\lib\router\layer.js:86:49
+     54    1.5%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+     38   70.4%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:353:29
+      7   18.4%          Function: ~<anonymous> node:tls:1:1
+      7  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   10.5%          Function: ~<anonymous> node:http:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   10.5%          Function: ~<anonymous> node:assert:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      4   10.5%          Function: ~<anonymous> node:_http_client:1:1
+      4  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      3    7.9%          Function: ~<anonymous> node:child_process:1:1
+      3  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      2    5.3%          LazyCompile: ~lazyWebCrypto node:crypto:125:23
+      2  100.0%            LazyCompile: ~get node:crypto:369:8
+      2    5.3%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      2  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          LazyCompile: ~lazyLoadStreams node:fs:2907:25
+      1  100.0%            LazyCompile: ~get ReadStream node:fs:3050:17
+      1    2.6%          LazyCompile: ~initCJSParse node:internal/modules/esm/translators:58:28
+      1  100.0%            LazyCompile: ~commonjsStrategy node:internal/modules/esm/translators:147:60
+      1    2.6%          LazyCompile: ~get node:dns:350:8
+      1  100.0%            C:\Program Files\nodejs\node.exe
+      1    2.6%          LazyCompile: ~createWritableStdioStream node:internal/bootstrap/switches/is_main_thread:45:35
+      1  100.0%            LazyCompile: ~getStderr node:internal/bootstrap/switches/is_main_thread:168:19
+      1    2.6%          Function: ~<anonymous> node:tty:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:internal/child_process:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:dns:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:dgram:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:cluster:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:_tls_wrap:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:_tls_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      1    2.6%          Function: ~<anonymous> node:_http_common:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:316:27
+      9   16.7%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      9  100.0%          Function: ^loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      9  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:807:24
+      7   13.0%        LazyCompile: ~compileForPublicLoader node:internal/bootstrap/loaders:263:25
+      7  100.0%          LazyCompile: ~loadBuiltinModule node:internal/modules/cjs/helpers:45:27
+      5   71.4%            LazyCompile: ~Module._load node:internal/modules/cjs/loader:807:24
+      2   28.6%            LazyCompile: ~builtinStrategy node:internal/modules/esm/translators:253:58
+     46    1.3%      LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     19   41.3%        LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+     19  100.0%          LazyCompile: *step C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:31:18
+     13   68.4%            LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      4   21.1%            Function: ^<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:30:40
+      2   10.5%            LazyCompile: *fulfilled C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:21:27
+     12   26.1%        Function: ^compileInput C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:507:24
+     12  100.0%          Function: ^ret C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\compiler.js:515:15
+     12  100.0%            Function: ^ExpressHandlebars._renderTemplate C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:321:60
+     10   21.7%        Function: ^compileChildren C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+     10  100.0%          LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+     10  100.0%            LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
+      5   10.9%        LazyCompile: *compileChildren C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:805:44
+      5  100.0%          LazyCompile: *compile C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\handlebars\dist\cjs\handlebars\compiler\javascript-compiler.js:73:28
+      5  100.0%            LazyCompile: *<anonymous> C:\Users\juand\Desktop\32190-BK\DesafioLoggers\node_modules\express-handlebars\dist\express-handlebars.js:227:47
