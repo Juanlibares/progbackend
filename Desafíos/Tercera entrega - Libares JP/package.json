@@ -1,0 +1,39 @@
+{
+  "name": "api-productos",
+  "version": "1.0.0",
+  "description": "API proyecto ecommerce curso backend CoderHouse",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuandGomezS/ProyectoFinalBe.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Juan David Gómez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JuandGomezS/ProyectoFinalBe/issues"
+  },
+  "homepage": "https://github.com/JuandGomezS/ProyectoFinalBe#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.2",
+    "firebase-admin": "^11.4.1",
+    "knex": "^2.3.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.2",
+    "mysql": "^2.18.1",
+    "sqlite3": "^5.1.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
