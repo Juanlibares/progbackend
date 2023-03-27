@@ -1,0 +1,50 @@
+{
+  "name": "desafio_socket",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "axios-test": "mocha ./test/axios.test.js",
+    "supertest": "mocha ./test/supertest.test.js",
+    "start": "nodemon server.js",
+    "fork-mode": "node server.js -m FORK",
+    "cluster-mode": "node server.js -m CLUSTER"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "autocannon": "^7.10.0",
+    "axios": "^1.3.4",
+    "bcrypt": "^5.1.0",
+    "chai": "^4.3.7",
+    "compression": "^1.7.4",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.15.0",
+    "ip": "^2.0.0",
+    "knex": "^2.3.0",
+    "mocha": "^10.2.0",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.4",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.1.2",
+    "normalizr": "^3.6.2",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "socket.io": "^4.5.4",
+    "sqlite3": "^5.1.2",
+    "supertest": "^6.3.3",
+    "winston": "^3.8.2",
+    "yargs": "^17.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
