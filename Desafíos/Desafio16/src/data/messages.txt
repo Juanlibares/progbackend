@@ -1,0 +1,28 @@
+[
+	{
+		"author": {
+			"mail": "juan@mail.com",
+			"name": "JUAN DAVID",
+			"surname": "GOMEZ SANTAFE",
+			"age": "",
+			"alias": "",
+			"avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg"
+		},
+		"date": "20/3/2023 14:35:44",
+		"text": "Hola",
+		"id": 1
+	},
+	{
+		"author": {
+			"mail": "david@mail.com",
+			"name": "David",
+			"surname": "Gomez",
+			"age": "",
+			"alias": "",
+			"avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1010.jpg"
+		},
+		"date": "8/4/2023 14:23:18",
+		"text": "asd",
+		"id": 2
+	}
+]
